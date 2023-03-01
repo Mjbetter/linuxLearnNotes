@@ -10,7 +10,7 @@
 
 ​	linux的文件系统是采用级层式的树状目录结构，在此结构中的最上层是根目录“/”，然后在此目录下再创建其他的目录。
 
-​                                  ![image-20230301203759600](C:\Users\MJ\AppData\Roaming\Typora\typora-user-images\image-20230301203759600.png)  
+​                                  ![image](https://user-images.githubusercontent.com/102216757/222163970-405cf100-a6f7-47d4-8910-31dea6ffb342.png)
 
 
 
