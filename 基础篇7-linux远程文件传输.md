@@ -12,6 +12,6 @@
 
 ​	按照如图开始配置端口即可，名称随意，主机选择虚拟机的ip地址，协议最好选择SFTP，端口号是22，不是21。
 
-![image-20230301211908809](C:\Users\MJ\AppData\Roaming\Typora\typora-user-images\image-20230301211908809.png)
+![image](https://user-images.githubusercontent.com/102216757/222164448-26970777-85c5-42c6-8510-d9d507ccd769.png)
 
 ​	此时左边显示的是windows的文件，右边显示的是linux的文件，如果右边文件显示都是乱码，那么点击左上角的的文件，点当前会话属性，点选项，把编码换成utf-8即可。
