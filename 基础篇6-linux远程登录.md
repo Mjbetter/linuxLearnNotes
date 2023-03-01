@@ -19,17 +19,17 @@ Ubuntu环境下输入sudo apt install net-tools来安装工具包
 完成以后再次输入ifconfig
 ```
 
-![image-20230301205648562](C:\Users\MJ\Pictures\Camera Roll\image-20230301205648562.png)
+![image](https://user-images.githubusercontent.com/102216757/222164226-8b0eff84-b79c-4426-8821-8b3eb74de5d8.png)
 
 ​	如上图所示，inet后面的192.169.58.128就是虚拟机的ip地址，然后我们在windows系统这边打开cmd，ping一下这个ip地址，看看能否正常通信。
 
-![image-20230301205758756](C:\Users\MJ\Pictures\Camera Roll\image-20230301205758756.png)
+![image](https://user-images.githubusercontent.com/102216757/222164267-857f357f-9117-4915-8338-1dbaa2e52f17.png)
 
 #### 三、开始建立连接
 
 ​	打开Xshell，新建会话，按照如图配置，名称随意，协议选择SSH，主机号就是我们虚拟机的IP地址，端口号22，然后点击确认即可。
 
-![image-20230301210539851](C:\Users\MJ\AppData\Roaming\Typora\typora-user-images\image-20230301210539851.png)
+![image](https://user-images.githubusercontent.com/102216757/222164308-a3dcb448-91f9-445d-a652-750c7f5ee336.png)
 
 ​	如果无法连接，那么就在虚拟机上输入指令：
 
