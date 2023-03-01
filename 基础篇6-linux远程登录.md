@@ -19,17 +19,17 @@ Ubuntu环境下输入sudo apt install net-tools来安装工具包
 完成以后再次输入ifconfig
 ```
 
-![image-20230301205648562](.\asset\image-20230301205648562.png)
+<img  src= ".\asset\image-20230301205648562.png"/>
 
 ​	如上图所示，inet后面的192.169.58.128就是虚拟机的ip地址，然后我们在windows系统这边打开cmd，ping一下这个ip地址，看看能否正常通信。
 
-![image-20230301205758756](.\asset\image-20230301205758756.png)
+<img src=".\asset\image-20230301205758756.png">
 
 #### 三、开始建立连接
 
 ​	打开Xshell，新建会话，按照如图配置，名称随意，协议选择SSH，主机号就是我们虚拟机的IP地址，端口号22，然后点击确认即可。
 
-![image-20230301210539851](.\asset\image-20230301210539851.png)
+<img  src= ".\asset\image-20230301210539851.png">
 
 ​	如果无法连接，那么就在虚拟机上输入指令：
 
