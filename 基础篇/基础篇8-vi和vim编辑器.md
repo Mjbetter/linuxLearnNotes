@@ -41,7 +41,7 @@ int main(){
 
 ​	1、vim和vi各个模式的切换图如下，:wq表示保存并退出，:q表示退出，:q!表示强制退出，不保存。
 
-<img  src= ".\asset\image-20230301214247036.png">
+<img  src= "..\asset\image-20230301214247036.png">
 
 ​    2、拷贝当前行，输入yy，拷贝当前行向下的5行，输入5yy，并粘贴（输入p）。（一般模式）
 
@@ -61,5 +61,5 @@ int main(){
 
 ​	vim和vi的快捷键图：
 
-<img  src= ".\asset\image-20230301220015635.png">
+<img  src= "..\asset\image-20230301220015635.png">
 
