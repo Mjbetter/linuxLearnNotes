@@ -373,3 +373,35 @@
    - 备份开始和备份结束能够给出相应的信息
    - 备份后的文件要求以备份时间为文件名，并打包成.tar.gz的形式，比如:2021-03-12_230201.tar.gz
    - 在备份的同时，检查是否有10天前备份的数据库文件，如果有就将其删除
+   
+2. ```shell
+   #!/bin/bash
+   # 备份目录
+   BACKUP=/data/backup/db
+   # 当前时间
+   DATETIME=$(date +%Y-%m-%d_%H%M%S)
+   # 数据库的地址
+   HOST=localhost
+   # 数据库的用户名
+   DB_USER=root
+   # 数据库密码
+   DB_PW=@Mj20020519
+   # 备份的数据名
+   DATABASE=mj
+   # 创建备份目录，如果不存在，就创建
+   [ ! -d "${BACKUP}/${DATETIME}" ] && mkdir -p "${BACKUP}/${DATETIME}"
+   # 备份数据库
+   mysqldump -u${DB_USER} -p${DB_PW} --host=${HOST} -q -R --databases ${DATABASE} | gzip > ${BACKUP}/${DATETIME}/$DATETIME.sql.gz
+   # 将文件处理成tar.gz
+   cd ${BACKUP}
+   tar -zcvf $DATETIME.tar.gz ${DATETIME}
+   # 删除对应的备份目录
+   rm -rf ${BACKUP}/${DATETIME}
+   
+   # 删除10天前备份的数据库文件
+   
+   find ${BACKUP} -atime +10 -name "*.tar.gz" -exec rm {} \;
+   echo "备份数据库${DATABASE}"
+   ```
+
+   
